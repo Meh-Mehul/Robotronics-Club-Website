@@ -9,6 +9,7 @@ import About from './components/About';
 import Hero from './components/Hero';
 import EventTimeline from './components/EventTimeline';
 import Projects from './components/Projects';
+import SocialSidebar from './components/SocialSidebar';
 function App() {
   useEffect(()=>{
     aos.init({duration:1000});
@@ -20,16 +21,9 @@ function App() {
     <About></About>
     <EventTimeline/>
     <Projects/>
-    <Main></Main>
-    <Main></Main>
-    <Main></Main>
-    <Main></Main>
-    <Main></Main>
-    <Main></Main>
-    <Main></Main>
-    <Main></Main>
-    <Main></Main>
-    <Main></Main>
+    <SocialSidebar/>
+
+
     </>
   )
 }
