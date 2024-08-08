@@ -10,6 +10,7 @@ import Hero from './components/Hero';
 import EventTimeline from './components/EventTimeline';
 import Projects from './components/Projects';
 import SocialSidebar from './components/SocialSidebar';
+import Footer from './components/Footer';
 function App() {
   useEffect(()=>{
     aos.init({duration:1000});
@@ -22,7 +23,7 @@ function App() {
     <EventTimeline/>
     <Projects/>
     <SocialSidebar/>
-
+    <Footer/>
 
     </>
   )
