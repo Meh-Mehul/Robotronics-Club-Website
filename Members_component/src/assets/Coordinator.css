@@ -1,0 +1,22 @@
+.template{
+	background-color: black;
+	opacity: 0.7;
+	width:fit-content;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding:3%;
+
+}
+.profile{
+	width:10rem;
+	height:10rem;
+}
+.title{
+	font-size: 4vh;
+}
+.description{
+	font-size: 3vh;
+}
