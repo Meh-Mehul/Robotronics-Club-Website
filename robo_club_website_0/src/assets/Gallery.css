@@ -95,18 +95,18 @@
 /* Responsive Adjustments */
 @media (max-width: 1200px) {
   .gallery-container {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for medium screens */
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Adjust for medium screens */
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   .gallery-container {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust for smaller screens */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjust for smaller screens */
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 600px) {
   .gallery-container {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust for very small screens */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjust for very small screens */
   }
 }
