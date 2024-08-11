@@ -7,7 +7,7 @@ const events = [
     time: '10:00 AM',
     title: 'Robotics',
     venue: 'Auditorium',
-    image: 'link',
+    image: '/src/assets/images/im1.jpg',
     stuff: 'example explaination of the event we clicked on '
 
   },
@@ -16,7 +16,7 @@ const events = [
     time: '02:00 PM',
     title: 'Coding',
     venue: 'Main Hall',
-    image: 'link',
+    image: '/src/assets/images/im2.jpg',
     stuff: 'example explaination of the event we clicked on '
   },
   {
@@ -24,7 +24,7 @@ const events = [
     time: '09:00 AM',
     title: 'Robotics Fair',
     venue: 'Expo Center',
-    image: 'link',
+    image: '/src/assets/images/im3.jpg',
     stuff: 'example explaination of the event we clicked on '
   },
   {
@@ -32,7 +32,7 @@ const events = [
     time: '11:00 AM',
     title: 'Robot Racing',
     venue: 'Sports Arena',
-    image: 'link',
+    image: '/src/assets/images/im4.jpg',
     stuff: 'example explaination of the event we clicked on '
   },
   {
@@ -40,7 +40,7 @@ const events = [
     time: '03:00 PM',
     title: 'Random',
     venue: 'Conference Room',
-    image: 'link',
+    image: '/src/assets/images/im5.jpg',
     stuff: 'example explaination of the event we clicked on '
   }
 ];

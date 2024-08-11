@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bokor&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-.hero-wrapper{
+.hero-wrapper {
     background-color: rgb(41, 2, 91);
-    background-size:100% 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%;
     height: 100vh;
@@ -10,103 +10,186 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+    border: 1px white;
 }
-.cont{
-    margin-top: -10%;
-    /* background-color: transparent;*/
-    /* backdrop-filter: blur(15px); */
-    background: rgba(0, 0, 0, 0.2);
+
+.cont {
+    background: rgba(0, 0, 0, 0.4);
     border-radius: 15%;
     text-align: center;
     font-family: "Lato";
-    margin: 0px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-size: xx-large;
     color: white;
-
+    padding: 20px;
+    max-width: fit-content; /* Max width to keep the content centered */
+    min-width: 300px; /* Min width to ensure it doesn't become too small */
+    width: 100%; /* Ensure it takes full width up to max-width */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
-/* .welcome ,.club{
 
-} */
-.text-wrapper p{
+/* Text styling for hero */
+.text-wrapper p {
+  line-height: 0; /* Keep line height at 0 for animation */
     color: white;
-    font-size: 2rem;
     text-align: center;
-    margin: 0px;
-    line-height: 0px;
+    margin: 0;
+    font-size:2rem; /* Default font size, increased */
 }
+.text-wrapper {
+  position: relative; /* Ensure the container can position children absolutely */
+}
+
+.text-wrapper p {
+  position: absolute; /* Stack elements on top of each other */
+  color: white;
+  text-align: center;
+  margin: 0;
+  line-height: 0; /* Keep line height at 0 for animation */
+  font-size: 4em; /* Increased font size */
+  width: 100%; /* Ensure full width for alignment */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+}
+.SplitTextJS-char{
+  font-size: 3rem;
+}
+/* Adjust individual p elements if necessary */
+.text-wrapper p:nth-child(1) {
+  top: 0; /* Position first element at the top */
+}
+
+.text-wrapper p:nth-child(2) {
+  top: 33%; /* Adjust position for the second element */
+}
+
+.text-wrapper p:nth-child(3) {
+  top: 66%; /* Adjust position for the third element */
+}
+
+.welcome{
+  margin: 0px;
+  font-size: 2em;
+  padding: 10%;
+}
+.club {
+  padding: 10%;
+    font-size: 2rem; /* Default font size for club text, increased */
+}
+
+/* Info section styling */
 .info {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, 0.3); /* Transparent background */
+    background: rgba(0, 0, 0, 0.3);
     padding: 20px;
     margin-top: 10%;
     border-radius: 8px;
-    backdrop-filter: blur(10px); /* Optional: adds a blur effect */
+    backdrop-filter: blur(10px);
     position: relative;
-  }
-  
-  /* Information Elements Styling */
-  .info-ele {
+}
+
+.info-ele {
     padding: 20px;
     font-size: 1.2em;
-    color: #fff; /* White text */
+    color: #fff;
     text-align: center;
     margin: 0;
-  }
-  
-  .info-ele div {
-    font-size: 0.9em;
-    color: #ddd; /* Light grey text */
-  }
-  
-  /* Vertical Lines Styling */
-  .line.vertical {
-    width: 2px;
-    background-color: #fff; /* White color for the vertical lines */
-    height: 60px; /* Adjust height as needed */
-  }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 768px) {
-    .info {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .line.vertical {
-      display: none; /* Hide vertical lines on smaller screens */
-    }
-  
-    .info-ele {
-      margin-bottom: 10px;
-    }
-  
-    .info-ele:last-child {
-      margin-bottom: 0;
-    }
-  }
-/* .ani{
-    padding-top: -50%;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    padding: 10px;
-    margin: 0px;
-    border-radius: 20px;
-    position:relative;
-    font-family: "Bokor", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: xx-large;
+}
 
-} */
-/* .club{
-    font-family: "Bokor", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 4em;
-    position:relative;
-    padding: 10px;
-    margin: 0px;
-    margin-top: -1%;
-} */
+.info-ele div {
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+.line.vertical {
+    width: 2px;
+    background-color: #fff;
+    height: 60px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
+    .cont {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .text-wrapper p {
+        font-size: 2rem; /* Adjusted for medium screens */
+    }
+
+    .club {
+        font-size: 2em;
+    }
+
+    /* .info {
+        flex-direction: column;
+        padding: 15px;
+    } */
+
+    .info-ele {
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .line.vertical {
+        height: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cont {
+        /* padding: 10px; */
+        font-size: 1.2rem;
+    }
+
+    .text-wrapper p {
+        font-size: 2rem; /* Adjusted for small screens */
+    }
+
+    .club {
+        font-size: 2em;
+    }
+
+    .info {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .info-ele {
+        font-size: 0.9em;
+        margin-bottom: 8px;
+    }
+
+    .line.vertical {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .cont {
+        padding: 5px;
+        font-size: 1rem;
+    }
+
+    .text-wrapper p {
+        font-size: 1.2rem; /* Adjusted for very small screens */
+    }
+
+    .club {
+        font-size: 2em;
+    }
+
+    .info {
+        padding: 5px;
+    }
+
+    .info-ele {
+        font-size: 0.8em;
+        margin-bottom: 6px;
+    }
+
+    .line.vertical {
+        display: none;
+    }
+}

@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
-import '../assets/Navbar.css';
+import { Navbar, Nav } from 'react-bootstrap';
+import '../assets/Navbar.css'; // Keep your existing CSS
 
-const Navbar = () => {
+const CustomNavbar = () => {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleScroll = () => {
@@ -20,19 +21,24 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div>
-      <nav className={`navbar-main ${isVisible ? 'visible' : ''}`} data-aos="fade-down">
-        <h1 className='main-heading' data-aos="fade-in">Robotronics Club</h1>
-        <ul className='nav-list'>
-          <li className='nav-list-ele' data-aos="fade-down"><a href='#about'>The Club</a></li>
-          <li className='nav-list-ele' data-aos="fade-down"><a href='#event'>Events</a></li>
-          <li className='nav-list-ele' data-aos="fade-down">Projects</li>
-          <li className='nav-list-ele' data-aos="fade-down">Members</li>
-          <li className='nav-list-ele' data-aos="fade-down">Gallery</li>
-        </ul>
-      </nav>
-    </div>
+    <Navbar 
+      className={`navbar-main ${isVisible ? 'visible' : ''}`} 
+      expand="lg" 
+      data-aos="fade-down"
+    >
+      <Navbar.Brand className='main-heading' data-aos="fade-in">Robotronics Club</Navbar.Brand>
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
+        <Nav className="nav-list">
+          <Nav.Link href='#about' className='nav-list-ele' data-aos="fade-down">The Club</Nav.Link>
+          <Nav.Link href='#event' className='nav-list-ele' data-aos="fade-down">Events</Nav.Link>
+          <Nav.Link href='#projects' className='nav-list-ele' data-aos="fade-down">Projects</Nav.Link>
+          <Nav.Link href='#members' className='nav-list-ele' data-aos="fade-down">Members</Nav.Link>
+          <Nav.Link href='#gallery' className='nav-list-ele' data-aos="fade-down">Gallery</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 };
 
-export default Navbar;
+export default CustomNavbar;

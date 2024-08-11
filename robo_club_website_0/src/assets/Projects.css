@@ -32,14 +32,15 @@
   position: absolute;
   width: 100%;
   height: 100%;
+
   transform-style: preserve-3d;
-  animation: rotate360 350s infinite linear; 
+  animation: rotate360 250s infinite linear; 
 }
 
 .carousel__face {
   position: absolute;
-  width: 100%;
-  height: 100%;
+  height: 800px;
+  width: 1000px;
   background-size: cover;
   background-position: center;
   box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3); 
@@ -101,5 +102,28 @@ span {
   }
   to {
     transform: rotateY(-3600deg); 
+  }
+}
+@media (max-width: 1200px) {
+  .project-text {
+    font-size: x-large; /* Adjust font size for medium screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .project-text {
+    font-size: large; /* Further adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .project-text {
+    font-size: medium; /* Adjust font size for even smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .project-text {
+    font-size: small; /* Adjust font size for very small screens */
   }
 }

@@ -1,42 +1,27 @@
-/* Navbar.css */
-
 /* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-.main-heading {
-    font-family: "Lato";
-    text-align: center;
-    margin: 0px;
-    margin-top: 10px;
-}
 
-body {
-    margin: 0px;
-    padding: 0px;
-}
 
 /* Navbar styling */
 .navbar-main {
     background: rgba(0, 0, 0, 0.3);
-    position: absolute;
-    top: -100px; /* Initially hide the navbar above the viewport */
-    left: 0;
+    position: absolute; /* Ensures it's above the content */
     width: 100%;
     margin: 0px;
     padding: 0px;
     display: flex;
     flex-direction: column;
-    min-width: 500px;
-    z-index: 1000;
+    z-index: 1000; /* Ensure it is above other content */
     color: white;
     border-color: brown;
     border-width: 30px;
-    transition: top 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease; /* Smooth transition */
 }
 
-/* Visible state of navbar */
+/* Navbar will overlap the next component */
 .navbar-main.visible {
-    top: 0; /* Show the navbar */
+    top: 0;
 }
 
 .nav-list {
@@ -55,7 +40,14 @@ body {
         transform: scale(1.2);
     }
 }
+.main-heading{
+    color: white;
+}
+.main-heading:hover{
+    color: white;
+    animation: enlargeAndBlur 0.3s forwards;
 
+}
 li {
     font-size: large;
 }
@@ -65,12 +57,25 @@ li {
     text-decoration: none;
     padding-bottom: 2%;
     transition: all 0.3s ease;
+    color: white; /* Ensure default color is white */
+    padding-bottom: 2%;
 }
-.nav-list-ele a{
-    text-decoration: none;
-    color: inherit;
-}
+
 /* Hover state with animation */
 .nav-list-ele:hover {
     animation: enlargeAndBlur 0.3s forwards;
+}
+
+/* Override Bootstrap's default styles for links */
+.navbar-main .nav-link {
+    color: white !important; /* Ensures link color is white */
+    transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Ensure active, focus, and hover states are handled */
+.navbar-main .nav-link.active,
+.navbar-main .nav-link:focus,
+.navbar-main .nav-link:hover {
+    color: white !important; /* Override Bootstrap's active, focus, and hover color */
+    background-color: transparent !important; /* Ensure background color does not interfere */
 }
