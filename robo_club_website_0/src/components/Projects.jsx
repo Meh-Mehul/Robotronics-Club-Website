@@ -29,7 +29,7 @@ const Projects = () => {
   };
 
   return (
-    <div className='project-wrapper'>
+    <div className='project-wrapper' id='projects'>
       <div className='project-text' data-aos="fade-up" data-aos-delay='100'>Some of our Ongoing Projects</div>
       <div className="container">
         <div className="carousel">

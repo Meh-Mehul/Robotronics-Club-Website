@@ -36,7 +36,7 @@ const images = [
 
 const Gallery = () => {
   return (
-    <div className="gallery-wrapper">
+    <div className="gallery-wrapper" id="gallery">
       <div className="gallery-heading" data-aos="fade-down">
         <h2>Gallery</h2>
       </div>
