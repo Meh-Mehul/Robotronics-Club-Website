@@ -104,26 +104,26 @@ span {
     transform: rotateY(-3600deg); 
   }
 }
-@media (max-width: 1200px) {
+/* /* @media (max-width: 1200px) {
   .project-text {
-    font-size: x-large; /* Adjust font size for medium screens */
+    font-size: x-large;  
   }
-}
+} */
 
 @media (max-width: 992px) {
   .project-text {
-    font-size: large; /* Further adjust font size for smaller screens */
+    font-size: large; 
   }
 }
 
 @media (max-width: 768px) {
   .project-text {
-    font-size: medium; /* Adjust font size for even smaller screens */
+    font-size: medium; 
   }
 }
 
 @media (max-width: 576px) {
   .project-text {
-    font-size: small; /* Adjust font size for very small screens */
+    font-size: medium; 
   }
-}
+} 

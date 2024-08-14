@@ -1,0 +1,19 @@
+
+.big{
+    width: 100px;
+    height: 500px;
+    background-color: brown;
+}
+.html{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+#root{
+    padding: 0px;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    overflow-x:hidden;
+    /* background-color: black; */
+}

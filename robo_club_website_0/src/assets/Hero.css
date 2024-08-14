@@ -68,10 +68,10 @@
 .welcome{
   margin: 0px;
   font-size: 2em;
-  padding: 10%;
+  padding: 8%;
 }
 .club {
-  padding: 10%;
+  padding: 8%;
     font-size: 2rem; /* Default font size for club text, increased */
 }
 
@@ -110,16 +110,19 @@
 /* Responsive Adjustments */
 @media (max-width: 1024px) {
     .cont {
-        padding: 15px;
+        padding: 10px;
         font-size: 1.2rem;
     }
 
     .text-wrapper p {
         font-size: 2rem; /* Adjusted for medium screens */
     }
-
     .club {
         font-size: 2em;
+        padding: 8%;
+    }
+    .welcome{
+        padding: 8%;
     }
 
     /* .info {
@@ -129,12 +132,13 @@
 
     .info-ele {
         font-size: 1em;
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .line.vertical {
         height: 40px;
     }
+
 }
 
 @media (max-width: 768px) {
@@ -164,6 +168,13 @@
     .line.vertical {
         display: none;
     }
+    .club {
+        font-size: 2em;
+        padding: 6%;
+    }
+    .welcome{
+        padding: 6%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -191,5 +202,27 @@
 
     .line.vertical {
         display: none;
+    }
+    .club {
+        font-size: 2em;
+        padding: 4%;
+    }
+    .welcome{
+        padding: 4%;
+    }
+}
+
+/* Max-width adjustment for less than 660px */
+@media (max-height: 660px) {
+    .club {
+        padding: 4%; /* Reduce padding */
+    }
+    .welcome {
+        padding: 4%; /* Reduce padding */
+    }
+    .SplitTextJS-char{
+        font-size: 2rem;
+        padding-top: 2%;
+        padding-bottom: 2%;
     }
 }

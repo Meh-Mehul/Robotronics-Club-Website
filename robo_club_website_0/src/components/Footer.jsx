@@ -2,10 +2,10 @@ import React from 'react';
 import '../assets/Footer.css';
 
 const Footer = () => {
-  return (
+  return ( 
     <footer className='footer'>
       <div className='footer-content'>
-        <h2>Robotronics Club</h2>
+        <h2 style={{"fontSize":'2em'}}>Robotronics Club</h2>
         <div className='footer-info'>
           <div className='footer-item'>
             <h3>Address</h3>
@@ -16,7 +16,7 @@ const Footer = () => {
           </div>
           <div className='footer-item'>
             <h3>Contact</h3>
-            <p>Email: <a href="mailto:coordiki@mail">coordi_ki@mail</a></p>
+            <p>Email: <a href="mailto:robotronics@students.iitmandi.ac.in">robotronics@students.iitmandi.ac.in</a></p>
           </div>
         </div>
       </div>

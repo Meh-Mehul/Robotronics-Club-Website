@@ -1,8 +1,6 @@
 /* Importing Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-
-
 /* Navbar styling */
 .navbar-main {
     background: rgba(0, 0, 0, 0.3);
@@ -46,7 +44,6 @@
 .main-heading:hover{
     color: white;
     animation: enlargeAndBlur 0.3s forwards;
-
 }
 li {
     font-size: large;
@@ -78,4 +75,16 @@ li {
 .navbar-main .nav-link:hover {
     color: white !important; /* Override Bootstrap's active, focus, and hover color */
     background-color: transparent !important; /* Ensure background color does not interfere */
+}
+/* .navbar-expand-lg{
+    padding-bottom: 2%;
+} */
+.navbar-collapse{
+    padding: 0.1rem;
+}
+/* New styles for collapsed navbar */
+@media (max-width: 992px) { /* Adjust based on your breakpoint for medium screens */
+    .navbar-main {
+        background: black !important; /* Make navbar black when collapsed */
+    }
 }

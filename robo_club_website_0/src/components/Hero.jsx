@@ -56,8 +56,8 @@ const Hero = () => {
       scale: 1.00,
       scaleMobile: 1.00,
       backgroundColor: 0x240b3f,
-      color: 0x0,
-      backgroundAlpha: 0.88
+      color: 0x240b3f,
+      backgroundAlpha: 1
     })
     // HALO({
     //   el: "#ani",

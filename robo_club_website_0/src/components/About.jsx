@@ -10,17 +10,16 @@ const About = () => {
             <img src='./src/assets/images/im3.jpg' alt='Robotics Club' />
           </div>
           <div className='up-info' data-aos="fade-right">
-            Welcome to the Robotics Club! We are a passionate group of individuals dedicated to exploring and advancing the field of robotics. Our club provides a platform for students and enthusiasts to come together, share knowledge, and work on innovative projects.
-          </div>
+          The Robotronics Club at the Indian Institute of Technology (IIT) Mandi is a dynamic student organization under the Science and Technology Council of the Student Gymkhana. Established to nurture a strong interest in robotics and technological innovation, the club serves as a hub for students who are enthusiastic about exploring automation, artificial intelligence, and robotics.          </div>
         </div>
         <div className='line-break'></div>
         <div className='down-about'>
           <div className='left-down' data-aos="fade-right">
-            Our club engages in various activities including workshops, seminars, and hands-on projects. We focus on practical learning and encourage our members to participate in competitions and research opportunities to gain real-world experience.
-          </div>
+          The club is driven by a mission to establish a vibrant environment for students who share a passion for robotics. Here, we aim to create a space where collective learning, growth, and the achievement of goals become a shared journey. The club is dedicated to providing its members with the tools, knowledge, and resources essential for addressing real-world challenges through innovative technological solutions.          </div>
           <div className='right-down' data-aos="fade-left">
-            We also collaborate with industry experts and organizations to provide valuable insights and mentorship. Join us to be part of a community that is shaping the future of robotics and technology. Together, we strive for excellence and innovation in every endeavor.
-          </div>
+          Through annual sessions, events, and hackathons, students from various disciplines come together to collaborate and showcase their skills. Beyond the campus, the club has made its mark in inter-IIT and other competitions, bringing numerous prizes and enhancing the institution's prestige. As the club continues to evolve, it remains dedicated to fostering a culture of learning, collaboration, and innovation.
+
+</div>
         </div>
       </div>
     </div>
