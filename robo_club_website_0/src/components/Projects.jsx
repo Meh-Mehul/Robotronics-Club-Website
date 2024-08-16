@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
 import '../assets/Projects.css';
 import Modal from './Modal'; // Import the Modal component
-import im1 from '../assets/images/im1.jpg';
-import im2 from '../assets/images/im2.jpg';
-import im3 from '../assets/images/im3.jpg';
-import im4 from '../assets/images/im4.jpg';
-import im5 from '../assets/images/im5.jpg';
+import im1 from '../assets/images/p1.jpg';
+import im2 from '../assets/images/p2.jpg';
+import im3 from '../assets/images/p3.jpg';
+import im4 from '../assets/images/p4.jpg';
+import im5 from '../assets/images/p5.jpg';
 
 const slides = [
-  { image: im1, text: 'Project 1: Exploring Robotics', description: 'Add Project Description Here' },
-  { image: im2, text: 'Project 2: Advanced AI', description: 'Add Project Description Here' },
-  { image: im3, text: 'Project 3: Autonomous Vehicles', description: 'Add Project Description Here' },
-  { image: im4, text: 'Project 4: Machine Learning Innovations', description: 'Add Project Description Here' },
-  { image: im5, text: 'Project 5: Robotics Competitions', description: 'Add Project Description Here' }
+  { image: im1, text: 'BattleBot', description: 'Designing autonomous robots for competitive arena combat.' },
+  { image: im2, text: 'MicroMouse', description: 'Developing a high-speed robot for Maze-Solving' },
+  { image: im3, text: 'Flipper Ducky', description: 'Portable multi-tool for hacking, security, and exploration.' },
+  { image: im4, text: 'RC Plane', description: 'Remote-controlled plane for aerial maneuvers and fun.' },
+  { image: im5, text: 'E-yantra', description: 'A robotics outreach program funded by the Ministry of Education and hosted at IIT Bombay.' }
 ];
 
 const Projects = () => {

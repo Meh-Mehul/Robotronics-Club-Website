@@ -113,6 +113,9 @@ const Projectstrying = () => {
           <Coordinator profile={Member2} kaam={coreTeam} naam="Yajesh Chandra"/>
         </SwiperSlide>
         <SwiperSlide>
+          <Coordinator profile={Member17} kaam={coreTeam} naam="Rishang Yadav"/>
+        </SwiperSlide>
+        <SwiperSlide>
           <Coordinator profile={Member3} kaam={coreTeam} naam="Abhinav Choudhary"/>
         </SwiperSlide>
         <SwiperSlide>
@@ -152,9 +155,7 @@ const Projectstrying = () => {
         <SwiperSlide>
           <Coordinator profile={Member16} kaam={coreTeam} naam="Anmol Kumar"/>
         </SwiperSlide>
-        <SwiperSlide>
-          <Coordinator profile={Member17} kaam={coreTeam} naam="Rishang Yadav"/>
-        </SwiperSlide>
+
         <SwiperSlide>
           <Coordinator profile={Member18} kaam={coreTeam} naam="Lavish Singal"/>
         </SwiperSlide>

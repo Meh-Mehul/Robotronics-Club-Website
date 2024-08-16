@@ -88,7 +88,7 @@ const Hero = () => {
         <div className='line vertical'></div>
         <p className='info-ele'>7+ <div>Ongoing Projects</div></p>
         <div className='line vertical'></div>
-        <p className='info-ele'>smth <div>smth</div></p>
+        <p className='info-ele'>10+ <div>Sessions</div></p>
       </div>
     </div>
   );
