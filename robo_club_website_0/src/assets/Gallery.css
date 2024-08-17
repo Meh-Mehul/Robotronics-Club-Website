@@ -85,6 +85,7 @@
   transition: all 0.3s ease;
   border-radius: 20px;
   position: absolute;
+  text-align: center;
 }
 
 .gallery-item:hover .gallery-details {

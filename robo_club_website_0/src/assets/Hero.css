@@ -21,7 +21,7 @@
     color: white;
     padding: 20px;
     max-width: fit-content; /* Max width to keep the content centered */
-    min-width: 300px; /* Min width to ensure it doesn't become too small */
+    min-width: 320px; /* Min width to ensure it doesn't become too small */
     width: 100%; /* Ensure it takes full width up to max-width */
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
@@ -43,6 +43,7 @@
   color: white;
   text-align: center;
   margin: 0;
+  letter-spacing: 1px;
   line-height: 0; /* Keep line height at 0 for animation */
   font-size: 4em; /* Increased font size */
   width: 100%; /* Ensure full width for alignment */

@@ -7,16 +7,17 @@ import im4 from '../assets/images/e4.jpg';
 
 const events = [
   {
+    title: 'Project X',
+    image: im2,
+    stuff: 'Project X recruits freshers to work on a new Project under our club.'
+  },
+  {
     title: 'Hands-on with Arduino',
     image: im1,
     stuff: 'Interactive session exploring Arduino basics with hands-on projects and experiments.'
 
   },
-  {
-    title: 'Project X',
-    image: im2,
-    stuff: 'Project X recruits freshers to work on a new Project under our club.'
-  },
+
   {
     title: 'Robo-Soccer',
     image: im3,

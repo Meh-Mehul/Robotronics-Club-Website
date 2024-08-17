@@ -2,10 +2,10 @@ import '../assets/Coordinator.css'
 
 function Coordinator({profile,kaam,naam}){
 	return(
-		 <div class="templating" id="CoordinatorTemp">
-		 <img class="profile" src={profile} />
-		 <p class="title">{naam}</p>
-		 <p class="description">{kaam} 
+		 <div className="templating" id="CoordinatorTemp">
+		 <img className="profile" src={profile} />
+		 <p className="title">{naam}</p>
+		 <p className="description">{kaam} 
 
 		 </p>
 		 </div>)

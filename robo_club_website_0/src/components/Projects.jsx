@@ -6,13 +6,15 @@ import im2 from '../assets/images/p2.jpg';
 import im3 from '../assets/images/p3.jpg';
 import im4 from '../assets/images/p4.jpg';
 import im5 from '../assets/images/p5.jpg';
-
+import im6 from '../assets/images/p6.jpg';
 const slides = [
   { image: im1, text: 'BattleBot', description: 'Designing autonomous robots for competitive arena combat.' },
   { image: im2, text: 'MicroMouse', description: 'Developing a high-speed robot for Maze-Solving' },
   { image: im3, text: 'Flipper Ducky', description: 'Portable multi-tool for hacking, security, and exploration.' },
   { image: im4, text: 'RC Plane', description: 'Remote-controlled plane for aerial maneuvers and fun.' },
-  { image: im5, text: 'E-yantra', description: 'A robotics outreach program funded by the Ministry of Education and hosted at IIT Bombay.' }
+  { image: im5, text: 'E-yantra', description: 'A robotics outreach program funded by the Ministry of Education and hosted at IIT Bombay.' },
+  { image: im6, text: 'Wall Climber', description: 'A robot that can climb surfaces with great inclinations' }
+
 ];
 
 const Projects = () => {
@@ -38,7 +40,7 @@ const Projects = () => {
               key={index}
               className="carousel__face"
               style={{ 
-                transform: `rotateY(${index * 72}deg) translateZ(1500px)`, 
+                transform: `rotateY(${index * 360/slides.length}deg) translateZ(1500px)`, 
                 backgroundImage: `url(${slide.image})` 
               }}
               onClick={() => handleOpenModal(slide.image, slide.text, slide.description)} // Pass description
