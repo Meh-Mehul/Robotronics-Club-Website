@@ -3,46 +3,29 @@ import '../assets/EventTimeline.css';
 
 const events = [
   {
-    date: '2024-08-01',
-    time: '10:00 AM',
-    title: 'Robotics',
-    venue: 'Auditorium',
-    image: '/src/assets/images/im1.jpg',
-    stuff: 'example explaination of the event we clicked on '
+    title: 'Hands-on with Arduino',
+    image: '/src/assets/images/e1.jpg',
+    stuff: 'Interactive session exploring Arduino basics with hands-on projects and experiments.'
 
   },
   {
-    date: '2024-08-10',
-    time: '02:00 PM',
-    title: 'Coding',
-    venue: 'Main Hall',
-    image: '/src/assets/images/im2.jpg',
-    stuff: 'example explaination of the event we clicked on '
+    title: 'Project X',
+    image: '/src/assets/images/e2.jpg',
+    stuff: 'Project X recruits freshers to work on a new Project under our club.'
   },
   {
-    date: '2024-08-15',
-    time: '09:00 AM',
-    title: 'Robotics Fair',
-    venue: 'Expo Center',
-    image: '/src/assets/images/im3.jpg',
-    stuff: 'example explaination of the event we clicked on '
+    title: 'Robo-Soccer',
+    image: '/src/assets/images/e3.jpg',
+    stuff: 'Robo-Soccer: Robots compete in thrilling soccer matches.'
   },
   {
-    date: '2024-09-01',
-    time: '11:00 AM',
-    title: 'Robot Racing',
-    venue: 'Sports Arena',
-    image: '/src/assets/images/im4.jpg',
-    stuff: 'example explaination of the event we clicked on '
+    title: 'An Introduction to ROS',
+    image: '/src/assets/images/e4.jpg',
+    stuff: 'Introduction to ROS: Learn robotics operating system fundamentals and applications.'
   },
-  {
-    date: '2024-09-20',
-    time: '03:00 PM',
-    title: 'Random',
-    venue: 'Conference Room',
-    image: '/src/assets/images/im5.jpg',
-    stuff: 'example explaination of the event we clicked on '
-  }
+
+
+
 ];
 
 const EventTimeline = () => {
@@ -68,9 +51,6 @@ const EventTimeline = () => {
                 <img src={event.image} alt={event.title} className="event-image" />
                 <div className="event-details">
                   <h3>{event.title}</h3>
-                  <p><strong>Date:</strong> {event.date}</p>
-                  <p><strong>Time:</strong> {event.time}</p>
-                  <p><strong>Venue:</strong> {event.venue}</p>
                 </div>
               </div>
             </div>
@@ -87,7 +67,6 @@ const EventTimeline = () => {
               <div className="modal-body">
                 <img src={selectedEvent.image} alt={selectedEvent.title} className="modal-image" />
                 <p><strong>{selectedEvent.stuff}</strong></p>
-                <p><strong>Venue:</strong> {selectedEvent.venue}</p>
               </div>
             </div>
           </div>

@@ -7,7 +7,7 @@ const About = () => {
       <div className='about-wrapper'>
         <div className='up-about'>
           <div className='about-img' data-aos="fade-left">
-            <img src='./src/assets/images/im3.jpg' alt='Robotics Club' />
+            <img src='./src/assets/images/logo.jpg' alt='Robotics Club' />
           </div>
           <div className='up-info' data-aos="fade-right">
           The Robotronics Club at the Indian Institute of Technology (IIT) Mandi is a dynamic student organization under the Science and Technology Council of the Student Gymkhana. Established to nurture a strong interest in robotics and technological innovation, the club serves as a hub for students who are enthusiastic about exploring automation, artificial intelligence, and robotics.          </div>
