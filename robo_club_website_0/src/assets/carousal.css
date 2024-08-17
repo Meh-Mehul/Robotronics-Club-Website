@@ -1,10 +1,13 @@
 
-
+.mem-wrapper{
+  background-color: rgb(52, 2, 86);
+}
 .swiper_container {
   width: 100%; /* Make the container take full width of its parent */
   height: 100vh; /* Set a default height, adjust as needed */
   position: relative;
   padding: 0;
+  border-top: 1px solid #3f3f3f;
 }
 
 .swiper-slide {

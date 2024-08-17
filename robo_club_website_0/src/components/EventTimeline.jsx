@@ -1,26 +1,30 @@
 import React, { useState } from 'react';
 import '../assets/EventTimeline.css';
+import im1 from '../assets/images/e1.jpg';
+import im2 from '../assets/images/e2.jpg';
+import im3 from '../assets/images/e3.jpg';
+import im4 from '../assets/images/e4.jpg';
 
 const events = [
   {
     title: 'Hands-on with Arduino',
-    image: '/src/assets/images/e1.jpg',
+    image: im1,
     stuff: 'Interactive session exploring Arduino basics with hands-on projects and experiments.'
 
   },
   {
     title: 'Project X',
-    image: '/src/assets/images/e2.jpg',
+    image: im2,
     stuff: 'Project X recruits freshers to work on a new Project under our club.'
   },
   {
     title: 'Robo-Soccer',
-    image: '/src/assets/images/e3.jpg',
+    image: im3,
     stuff: 'Robo-Soccer: Robots compete in thrilling soccer matches.'
   },
   {
     title: 'An Introduction to ROS',
-    image: '/src/assets/images/e4.jpg',
+    image: im4,
     stuff: 'Introduction to ROS: Learn robotics operating system fundamentals and applications.'
   },
 

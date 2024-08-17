@@ -61,7 +61,7 @@ const Projectstrying = () => {
       spacing: 12.00,
       color: 0xff,
       showDots: true,
-      backgroundColor: 0x240b3f,
+      backgroundColor: 0x340256,
     });
   }, []);
   //const Member1="../assets/images/Member1.jpg";
@@ -69,7 +69,10 @@ const Projectstrying = () => {
   const coordi="Coordinator"
   const coCoordi="Co-Coordinator"
   return (
-    
+    <div className="mem-wrapper" id = 'members'>
+          <div className="gallery-heading" data-aos="fade-down">
+        <h2>Members</h2>
+      </div>
     <div id="vanta" className="mem-container">
             <Swiper
         effect={'coverflow'}
@@ -88,6 +91,7 @@ const Projectstrying = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
         className="swiper_container"
       >
+
         <SwiperSlide>
           <Coordinator profile={Member0} kaam={coordi}  naam="Piyush Roy" />
         </SwiperSlide>
@@ -200,7 +204,7 @@ const Projectstrying = () => {
 
       </Swiper>
     </div>
-    
+    </div>
   );
 };
 

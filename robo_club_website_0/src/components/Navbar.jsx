@@ -33,7 +33,7 @@ const CustomNavbar = () => {
           <Nav.Link href='/#about' className='nav-list-ele' data-aos="fade-down">The Club</Nav.Link>
           <Nav.Link href='/#event' className='nav-list-ele' data-aos="fade-down">Events</Nav.Link>
           <Nav.Link href='/#projects' className='nav-list-ele' data-aos="fade-down">Projects</Nav.Link>
-          <Nav.Link href='/members' className='nav-list-ele' data-aos="fade-down">Members</Nav.Link>
+          <Nav.Link href='/#members' className='nav-list-ele' data-aos="fade-down">Members</Nav.Link>
           <Nav.Link href='/#gallery' className='nav-list-ele' data-aos="fade-down">Gallery</Nav.Link>
         </Nav>
       </Navbar.Collapse>
